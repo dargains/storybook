@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook",
-    "build": "build-storybook -c .storybook -o build"
+    "start": "build-storybook -c .storybook -o build"
   },
   "author": "",
   "license": "ISC",
