@@ -1,1 +1,1 @@
-web: build
+web: http-server build
