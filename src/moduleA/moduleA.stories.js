@@ -1,6 +1,6 @@
 import html from './moduleA.html'
 import './moduleA.css'
-import './moduleA.js'
+// import './moduleA.js'
 
 export default { title: 'Module A' };
 
