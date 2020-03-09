@@ -1,3 +1,4 @@
-const cenas = require('./moduleA/moduleA')
+const teste = {};
+teste.moduleA = require('./moduleA/moduleA')
 
-console.log(cenas);
+teste.moduleA().init();

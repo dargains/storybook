@@ -2,10 +2,9 @@
   "name": "storybook",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browserify index.js -o build/bundle.js",
+    "start": "watchify src/index.js -o build/bundle.js",
     "storybook": "start-storybook",
     "storybook-build": "build-storybook -c .storybook -o storybook"
   },

@@ -1,10 +1,13 @@
-const cenas = "oi";
+module.exports = () => {
+  return {
+    init() {
+      this.variables();
+    },
+    variables() {
+      console.log('cenaas');
+    },
+    events() {
 
-function mudar() {
-  const oi = document.getElementById('oi');
-  console.log(oi);
+    }
+  }
 }
-mudar()
-
-
-module.exports = cenas;
