@@ -1,13 +1,5 @@
-module.exports = () => {
-  return {
-    init() {
-      this.variables();
-    },
-    variables() {
-      console.log('cenaas');
-    },
-    events() {
-
-    }
-  }
+function init() {
+  console.log('object');
 }
+
+export default init
