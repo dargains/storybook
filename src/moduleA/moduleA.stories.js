@@ -1,7 +1,25 @@
-import html from './moduleA.html'
 import './moduleA.css'
-// import './moduleA.js'
+import './moduleA.js'
+export default {
+  title: 'Module A',
+  argTypes: {
+    title: {
+      control: { type: 'text' }
+    },
+    description: {
+      control: { type: 'text' }
+    },
+  }
+};
 
-export default { title: 'Module A' };
+export const Playground = args => `
+  <section>
+    <h1>${args.title}</h1>
+    <p>${args.description}</p>
+  </section>
+`
 
-export const withText = () => html;
+Playground.args = {
+  title: 'Module title',
+  description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur vitae architecto nihil perspiciatis quisquam voluptatem voluptates dolorum temporibus consectetur reiciendis?'
+}
